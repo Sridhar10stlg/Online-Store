@@ -1,0 +1,104 @@
+/* CSS for Sales Report Dashboard */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/assets/os.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid-container > div {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container h2 {
+    margin-top: 0;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px auto; /* Center the buttons horizontally */
+    display: block;
+}
+
+button:hover {
+    background-color: #005f7f;
+}
+
+#salesContainer,
+#ordersContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#salesContainer h2,
+#ordersContainer h2 {
+    margin-top: 0;
+}
+
+#salesContainer table,
+#ordersContainer table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#salesContainer th,
+#salesContainer td,
+#ordersContainer th,
+#ordersContainer td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#salesContainer th,
+#ordersContainer th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+#salesContainer tr:nth-child(even),
+#ordersContainer tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#salesContainer tr:hover,
+#ordersContainer tr:hover {
+    background-color: #ddd;
+}
